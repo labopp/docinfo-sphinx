@@ -66,7 +66,7 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 
 #.  Une fois les transferts terminés, il ne faut pas oublier de fermer le tunnel SSH.
 
-.. Note:: Cette procédure a été décrite pour MacOS 10.7.5 (merci à Ingrid Violet pour les screenshots). Pour d'autres versions de MacOS, certaines étapes peuvent être différentes.
+.. Note:: Cette procédure a été décrite pour MacOS 10.7.5. Pour d'autres versions de MacOS, certaines étapes peuvent être différentes.
 
 Entre une machine Windows extérieure au laboratoire et un serveur
 -----------------------------------------------------------------

@@ -21,7 +21,7 @@ Qui a contribué au projet
 -------------------------
 La première version de cette documentation à été créée par Alexandre Mouton sur la page web du labo. Pour cette version Il a été aidé par Ingrid Violet. Des modifications ont été apportées par Sébastien Huart et Mohammed Khabzaoui.
 
-La première version sous ReStructuredText_ a été obtenu par Kroum Tzanev en utilisant Pandoc_.
+La première version sous ReStructuredText_ a été obtenue par Kroum Tzanev en utilisant Pandoc_.
 
 .. _ReStructuredText: https://fr.wikipedia.org/wiki/ReStructuredText
 .. _Sphinx: https://fr.wikipedia.org/wiki/Sphinx_(g%C3%A9n%C3%A9rateur_de_documentation)

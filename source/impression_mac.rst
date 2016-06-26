@@ -1,7 +1,7 @@
 Impression sous MacOS
 =====================
 
-La procédure décrite ci-dessous a été faite pour MacOS 10.7.5 (merci à Ingrid Violet pour les explications et les screenshots). Pour d'autres versions de MacOS, certaines étapes peuvent être différentes.
+La procédure décrite ci-dessous a été faite pour MacOS 10.7.5. Pour d'autres versions de MacOS, certaines étapes peuvent être différentes.
 
 #.  Démarrer l'outil **Préférences Système** > **Imprimantes et Scanners**.
 

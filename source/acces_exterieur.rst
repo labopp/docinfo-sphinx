@@ -56,7 +56,7 @@ Entre une machine MacOS extérieure au laboratoire et Argos
 
 #.  L'écran se sépare en 2 parties, l'une indiquant l'arborescence de la machine MacOS, l'autre l'arborescence de ``math-argos``. Déplacer les fichiers de l'une à l'autre avec un simple drag-and-drop.
 
-.. Note:: Cette procédure a été décrite pour MacOS 10.7.5 (merci à Ingrid Violet pour les screenshots). Pour d'autres versions de MacOS, certaines étapes peuvent différer.
+.. Note:: Cette procédure a été décrite pour MacOS 10.7.5. Pour d'autres versions de MacOS, certaines étapes peuvent différer.
 
 .. _AccesWindows:
 

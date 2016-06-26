@@ -1,0 +1,29 @@
+Localisation
+============
+
+.. _ListeImprimantes:
+
+Localisation des imprimantes
+----------------------------
+
+.. csv-table::
+  :header: "Nom","Emplacement","Modèle (pilote)","Adresse IP","Interface web"
+
+  "gaudy","M2, RdC, photocopieur face à l'imprimerie","Konica Minolta BizHub 223 (Minolta 500/420/360 PS)","134.206.85.248","`gaudy.univ-lille1.fr <http://gaudy.univ-lille1.fr>`_"
+  "lucida","M2, 1er étage, à côté des bureaux 102-104-106","HP 4015tn (LaserJet P4010 Series)","134.206.85.246","`lucida.univ-lille1.fr <http://lucida.univ-lille1.fr>`_"
+  "zapf","M2, 2ème étage, salle 218","HP M602 (LaserJet 600 M601 M602 M603)","134.206.85.251","`zapf.univ-lille1.fr <http://zapf.univ-lille1.fr>`_" 
+  "bembo","M2, 3ème étage, entre les bureaux 308 et 310","HP 4015dn (LaserJet P4010 Series)","134.206.85.250","`bembo.univ-lille1.fr <http://bembo.univ-lille1.fr>`_"
+  "carta","M3, 1er étage, salle 115","HP 4250dtn (LaserJet P4010 Series)","134.206.85.247","`carta.univ-lille1.fr <http://carta.univ-lille1.fr>`_"
+  "bodoni","M3, 2ème étage, local 223","HP 600 M602 (LaserJet 600 M601 M602 M603)","134.206.85.249","`bodoni.univ-lille1.fr <http://bodoni.univ-lille1.fr>`_"
+  "futura","M3, 3ème étage, salle 312","HP 4350dn (LaserJet P4010 Series)","134.206.85.245","`futura.univ-lille1.fr <http://futura.univ-lille1.fr>`_"
+
+.. Note:: Ces imprimantes ne sont accessibles qu'à partir du réseau de l'université.
+
+Localisation des scanners
+-------------------------
+
+-  Bâtiment M2, face aux bureaux 102,104,106, à côté du fax
+-  Bâtiment M2, local imprimerie
+
+
+ 

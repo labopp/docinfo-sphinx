@@ -8,8 +8,14 @@ Comment ça fonctionne
 
 Cette documentation est écrite avec le lagunage de balisage léger ReStructuredText_. Puis les versions HTML et LaTeX sont obtenus avec le générateur des documentation Sphinx_.
 
-Comment aider à l'amélioré
---------------------------
+Chaque fois que la documentation est mise à jour sur GitHub elle automatiqment transformée en
+
+- `HTML <https://docinfo-sphinx.readthedocs.io>`_,
+- `PDF <http://readthedocs.org/projects/docinfo-sphinx/downloads/pdf/latest/>`_,
+- `EPUB <http://readthedocs.org/projects/docinfo-sphinx/downloads/epub/latest/>`_.
+
+Comment aider à l'améliorer
+---------------------------
 
 Qui a contribué au projet
 -------------------------

@@ -34,3 +34,4 @@ La liste des contributeurs dans l'ordre chronologique :
 - Sébastien Huart
 - Mohammed Khabzaoui
 - Kroum Tzanev
+- Jean-François Burnol

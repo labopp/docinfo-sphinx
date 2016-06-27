@@ -28,7 +28,7 @@ Le principe du mode batch consiste à rédiger un script contenant toutes les in
 Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qsub monjob.torque
-  213.mathcalc3
+    213.mathcalc3
 
 
 Ici, le message renvoyé ``213.mathcalc3`` correspond à l'identifiant qui est affecté au job dans la file d'attente.
@@ -75,7 +75,7 @@ La réponse sera le tableau suivant :
 :Req'd Memory: mémoire vive requise par l'utilisateur,
 :Req'd Time: temps de calcul requis (valeur par défaut : le temps
    limite associé à la file d'attente),
-:S: statut du job (voir `ci-dessous <#statut-job>`__),
+:S: statut du job (voir :ref:`ci-dessous <statutJob>`),
 :Elap Time: temps écoulé depuis le début de l'exécution.
 
 Surveiller un job
@@ -87,6 +87,8 @@ suivante ::
   [monlogin@mathcalc3 ~]$ qstat -f 212.mathcalc3
 
 La réponse sera de la forme suivante :
+
+.. _statutJob:
 
 .. code-block:: none
 

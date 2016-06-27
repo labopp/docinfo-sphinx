@@ -22,7 +22,7 @@ privé du laboratoire ::
 Depuis une machine Windows extérieure au laboratoire
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#.  Démarrer `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`__.
+#.  Démarrer `PuTTY <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>`_.
     Il faut alors renseigner les champs **Host Name** avec ``math-argos.univ-lille1.fr``, le numéro du port avec ``8524`` et vérifier que le type de connexion est bien *SSH*. On peut également sauvegarder ces paramètres en cliquant sur **Save**.
 
     |image0|
@@ -49,7 +49,7 @@ Entre une machine Linux extérieure au laboratoire et Argos
 Entre une machine MacOS extérieure au laboratoire et Argos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#.  Démarrer `Fugu <http://sourceforge.net/projects/fugussh/files/>`__.
+#.  Démarrer `Fugu <http://sourceforge.net/projects/fugussh/files/>`_.
     Afin de se connecter à ``math-argos``, il faut renseigner les champs *Se connecter à* avec ``math-argos.univ-lille1.fr``, le port avec ``8524``, ainsi que le login. Il est possible de sauvegarder ces réglages en cliquant sur *Ajouter aux favoris*. Enfin, cliquer sur *Connexion*.
 
        |image2|
@@ -63,7 +63,7 @@ Entre une machine MacOS extérieure au laboratoire et Argos
 Entre une machine Windows extérieure au laboratoire et Argos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`__.
+#.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`_.
     Afin de se connecter à ``math-argos``, il faut créer une nouvelle session dans laquelle il faut renseigner les champs suivants : dans l'onglet *Session*, il faut indiquer ``math-argos.univ-lille1.fr`` pour le nom d'hôte, ``8524`` pour le numéro du port, indiquer le login et le mot de passe, et enfin vérifier que le mode de connexion est bien ``SCP``.
 
        |image3|

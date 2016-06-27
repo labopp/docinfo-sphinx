@@ -35,7 +35,7 @@ Entre une machine Linux extérieure au laboratoire et un serveur
 Entre une machine MacOS extérieure au laboratoire et un serveur
 ---------------------------------------------------------------
 
-#.  Démarrer `Fugu <http://sourceforge.net/projects/fugussh/files/>`__. Il faut commencer par créer le tunnel SSH qui sera hébergé sur Argos. Pour cela, cliquer dans la barre de menu *SSH* > *Nouveau tunnel SSH*.
+#.  Démarrer `Fugu <http://sourceforge.net/projects/fugussh/files/>`_. Il faut commencer par créer le tunnel SSH qui sera hébergé sur Argos. Pour cela, cliquer dans la barre de menu *SSH* > *Nouveau tunnel SSH*.
 
 #.  Dans la fenêtre qui s'ouvre, il faut remplir les champs suivants :
 
@@ -75,7 +75,7 @@ Entre une machine Windows extérieure au laboratoire et un serveur
 
 |image3|
 
-#.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`__. Il faut créer une session basée sur un rebond SSH sur le serveur Argos. Il faut dans un premier temps indiquer le serveur de destination finale, par exemple ``mathcalc3`` en renseignant dans les options de *Session* le nom de la machine hôte par ``mathcalc3``, le numéro du port local par ``22`` (car la connexion entre Argos et mathcalc3 se fera via le port ``22``), le login et le mot de passe sur ``mathcalc3`` et vérifier que le mode de connexion est bien ``SCP``.
+#.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`_. Il faut créer une session basée sur un rebond SSH sur le serveur Argos. Il faut dans un premier temps indiquer le serveur de destination finale, par exemple ``mathcalc3`` en renseignant dans les options de *Session* le nom de la machine hôte par ``mathcalc3``, le numéro du port local par ``22`` (car la connexion entre Argos et mathcalc3 se fera via le port ``22``), le login et le mot de passe sur ``mathcalc3`` et vérifier que le mode de connexion est bien ``SCP``.
     **Ne pas sauvegarder tout de suite, ce n'est pas fini !**
 
 #.  Il faut maintenant configurer le rebond sur Argos. Pour cela, il faut modifier certains paramètres dans les options *Connexion* > *Tunnel*. Plus précisément, il faut cocher la case ``Connexion à travers un tunnel SSH``, renseigner respectivement les noms d'hôte et numéro de port par ``argos.univ-lille1.fr`` et ``8524``, indiquer le login et le mot de passe du compte utilisé sur Argos, et vérifier que le *Port local du tunnel* est bien réglé sur ``Sélection automatique``.

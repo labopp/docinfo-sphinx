@@ -10,7 +10,7 @@ Commandes PBS
 
 Afin de spécifier certains paramètres relatives à l'exécution d'un
 calcul, on utilise l'entame ``#PBS``. Il existe une `liste
-exhaustive <http://www.clusterresources.com/torquedocs21/usersmanual.shtml>`__
+exhaustive <http://www.clusterresources.com/torquedocs21/usersmanual.shtml>`_
 de paramètres à spécifier de cette façon. Nous résumons ici les plus
 couramment utilisées :
 
@@ -117,7 +117,7 @@ script à un autre calcul.
 Exemple 1 : exécuter un code séquentiel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On souhaite compiler et exécuter en mode batch le programme `HelloWorld <files/HelloWorld.f90>`__ écrit en Fortran 90.
+On souhaite compiler et exécuter en mode batch le programme `HelloWorld <files/HelloWorld.f90>`_ écrit en Fortran 90.
 C'est un calcul très court, requierant très peu de mémoire.
 On se contentera donc de préciser dans le script Torque le nom du job, le serveur utilisé, les fichiers de sortie et d'erreur, ainsi que les alertes mails ::
 
@@ -147,7 +147,7 @@ Exemple 2 : exécuter un code séquentiel avec gestion de fichiers de résultats
 On souhaite résoudre l'équation de Poisson 2D avec une méthode de
 différences finies d'ordre 2 sur mailage cartésien. Le code séquentiel
 pour résoudre un tel problème est disponible à `ce
-lien <files/Poisson_BCGStab.tar.gz>`__. Si on considère un maillage fin,
+lien <files/Poisson_BCGStab.tar.gz>`_. Si on considère un maillage fin,
 le calcul peut s'avérer coûteux en temps de calcul, en mémoire vive et
 en espace disque. Il faut donc que le calcul soit lancé depuis un
 répertoire ``/scratch``. Le script Torque pour lancer un tel job est
@@ -184,7 +184,7 @@ Exemple 3 : exécuter un code parallèle avec gestion de fichiers de résultats
 
 Un dernier exemple est consacré à l'exécution d'un calcul parallèle où
 chaque processeur peut être amené à générer des fichiers. Ici, nous nous
-contenterons d'un `HelloWorld <files/HelloWorldMPI.f90>`__ programmé en
+contenterons d'un `HelloWorld <files/HelloWorldMPI.f90>`_ programmé en
 MPI-Fortran dans lequel chaque processeur écrit son propre fichier.
 Etant donné qu'il est possible d'impliquer plusieurs serveurs pour ce
 genre de calcul, l'idée consiste à ::

@@ -1,9 +1,9 @@
 Ressources en Calcul
 ====================
 
-Le laboratoire met à disposition des moyens de calculs permettant de réaliser des simulations numériques de problèmes issus des mathématiques, souvent en interaction avec la physique, la biologie, la finance... L'objectif principal de ces moyens de calcul n'est pas de rivaliser avec les super-ordinateurs du `Top 500 <http://www.top500.org/>`__ mais de permettre à ceux qui le souhaitent de développer et de tester leurs codes de simulations avant un éventuel portage sur des machines beaucoup plus puissantes.
+Le laboratoire met à disposition des moyens de calculs permettant de réaliser des simulations numériques de problèmes issus des mathématiques, souvent en interaction avec la physique, la biologie, la finance... L'objectif principal de ces moyens de calcul n'est pas de rivaliser avec les super-ordinateurs du `Top 500 <http://www.top500.org/>`_ mais de permettre à ceux qui le souhaitent de développer et de tester leurs codes de simulations avant un éventuel portage sur des machines beaucoup plus puissantes.
 
-Tout membre du laboratoire souhaitant bénéficier de ces ressources de calcul peut faire une demande d'ouverture de compte en envoyant un email à `sysadmin <mailto:sysadmin@math.univ-lille1.fr?subject=demande%20de%20création%20de%20compte%20sur%20mathcalc>`__.
+Tout membre du laboratoire souhaitant bénéficier de ces ressources de calcul peut faire une demande d'ouverture de compte en envoyant un email à `sysadmin <mailto:sysadmin@math.univ-lille1.fr?subject=demande%20de%20création%20de%20compte%20sur%20mathcalc>`_.
 
 Il est rappelé que **la machine Argos n'est pas destinée au calcul** même si certains outils comme Matlab ou Maple y sont présents. Argos est destinée à l'ensemble des membres du laboratoire afin de permettre un accès à Internet et à des outils informatiques tels que LaTeX, Thunderbird etc...
 
@@ -21,14 +21,14 @@ Les ressources proposées sont constituées de 5 serveurs de calcul nommés ``ma
     "mathcalc7","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","52 Go"
     "mathcalc8","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","54 Go"
 
-Le serveur ``mathcuda`` embarque une carte graphique `Nvidia Tesla C2050 <http://www.nvidia.fr/object/product_tesla_C2050_C2070_fr.html>`__ (448 coeurs CUDA cadencés à 1.15 GHz, 3 Go GDDR5) entièrement dédié au développement de codes programmés en langage CUDA© et au calcul sur processeur graphique. Le répertoire ``/home`` de ``mathcuda`` est indépendant de celui des ``mathcalc``.
+Le serveur ``mathcuda`` embarque une carte graphique `Nvidia Tesla C2050 <http://www.nvidia.fr/object/product_tesla_C2050_C2070_fr.html>`_ (448 coeurs CUDA cadencés à 1.15 GHz, 3 Go GDDR5) entièrement dédié au développement de codes programmés en langage CUDA© et au calcul sur processeur graphique. Le répertoire ``/home`` de ``mathcuda`` est indépendant de celui des ``mathcalc``.
 
 Le répertoire ``/home`` des serveurs de calcul est indépendant de celui d'Argos.
 
 Ressources logiciels
 --------------------
 
-L'ensemble des serveurs de calcul du laboratoire fonctionnent actuellement avec le système d'exploitation `Ubuntu 12.04.3 Server Edition <http://www.ubuntu.com/server>`__.
+L'ensemble des serveurs de calcul du laboratoire fonctionnent actuellement avec le système d'exploitation `Ubuntu 12.04.3 Server Edition <http://www.ubuntu.com/server>`_.
 
 - Compilateurs : gfortran 4.6.3, ifort (Intel-Fortran), gcc 4.6.3, gcc34, icc (Intel-C), g++ 4.6.3, g++34, mpicc, mpif90, python, python2.7, javac, ...
 - Librairies : Intel MKL, FFTW 3, Suitesparse 3.6.1-4, Scalapack 1.7.5, Silo 4.6.1, HDF5 1.8.5, ...

@@ -3,7 +3,7 @@
 Connexion SSH
 =============
 
-Il est nécessaire de posséder un compte pour accéder aux ``mathcalc`` et à ``mathcuda``. Ce compte est indépendant de celui que chaque membre du laboratoire possède sur ``argos``. Pour en faire la demande, il suffit d'envoyer un mail à `sysadmin <mailto:sysadmin@math.univ-lille1.fr?subject=demande%20de%20création%20de%20compte%20sur%20mathcalc>`__.
+Il est nécessaire de posséder un compte pour accéder aux ``mathcalc`` et à ``mathcuda``. Ce compte est indépendant de celui que chaque membre du laboratoire possède sur ``argos``. Pour en faire la demande, il suffit d'envoyer un mail à `sysadmin <mailto:sysadmin@math.univ-lille1.fr?subject=demande%20de%20création%20de%20compte%20sur%20mathcalc>`_.
 
 Depuis le réseau privé du laboratoire
 -------------------------------------

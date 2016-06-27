@@ -55,7 +55,7 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 .PHONY: livehtml
-html:
+livehtml:
 	sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Live build finished. The HTML pages are in $(BUILDDIR)/html."

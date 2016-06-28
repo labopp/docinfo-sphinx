@@ -35,9 +35,9 @@ Depuis une machine Windows extérieure au laboratoire
     que le type de connexion est bien *SSH*. On peut également sauvegarder ces
     paramètres en cliquant sur **Save**.
 
-    |image0|
+      |image0|
 
-    |image1|
+      |image1|
 
     Enfin, cliquer sur **Open** afin de lancer la connexion.
 

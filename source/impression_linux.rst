@@ -14,17 +14,17 @@ Impression sous Linux
 
 #.  Dans la fenêtre qui vient de s'ouvrir, lancer l'ajout d'une nouvelle imprimante (bouton **Ajouter** ou **Nouveau** selon les distributions)
 
-    |image0|
+      |image0|
 
 #.  Dans la liste qui s'affiche, choisir **Internet Printing Protocol** (ipp) et indiquer l'adresse de l'imprimante sous le format ``ipp://mathprint.labomath.univ-lille1.fr:631/printers/nom\_imprimante``
 
-    |image1| |image2|
+      |image1| |image2|
 
 #.  Choisir le pilote parmi la liste proposée. Par exemple, pour configurer l'imprimante bodoni, on choisira le pilote LaserJet P4010 Series.
 
-    |image3| |image4|
+      |image3| |image4|
 
-    |image5| |image6|
+      |image5| |image6|
 
 Définir une imprimante par défaut sur Argos
 -------------------------------------------

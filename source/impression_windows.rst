@@ -5,7 +5,7 @@ La procédure décrite ci-dessous a été faite pour Windows Vista (merci à Via
 
 #.  Ouvrir l'utilitaire de gestion d'imprimantes (*Panneau de Configuration* > *Imprimantes*) et cliquer sur **Ajouter une imprimante**.
 
-    |image0|
+      |image0|
 
     puis choisir la recherche d'une imprimante réseau.
 

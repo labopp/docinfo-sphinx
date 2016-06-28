@@ -46,9 +46,11 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
     - **Nom d'utilisateur :** ``monlogin``
     - **Port :** ``8524``
 
-  |image0|
+    ..
 
-  .. Note:: les ports choisis sont nécessaires. En effet, l'accès à Argos ne peut se faire que par le port ``8524`` tandis que l'accès à ``mathcalcN`` ne peut se faire que depuis le port ``22``. Enfin, Fugu utilise généralement le port ``1024`` pour réaliser le montage.
+      |image0|
+
+    .. Note:: les ports choisis sont nécessaires. En effet, l'accès à Argos ne peut se faire que par le port ``8524`` tandis que l'accès à ``mathcalcN`` ne peut se faire que depuis le port ``22``. Enfin, Fugu utilise généralement le port ``1024`` pour réaliser le montage.
 
 #.  Cliquer sur *Ouvrir le tunnel*. Cela ferme la fenêtre d'ouverture de tunnel et en ouvre une autre permettant de refermer le tunnel quand on le souhaite (voir dernière étape).
 
@@ -58,7 +60,9 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
     - **Nom d'utilisateur :** ``monlogin``
     - **Port :** ``1024``
 
-    |image1|
+    ..
+
+      |image1|
 
     Cliquer enfin sur *Se connecter*.
 
@@ -71,9 +75,9 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 Entre une machine Windows extérieure au laboratoire et un serveur
 -----------------------------------------------------------------
 
-|image2|
+  |image2|
 
-|image3|
+  |image3|
 
 #.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`_. Il faut créer une session basée sur un rebond SSH sur le serveur Argos. Il faut dans un premier temps indiquer le serveur de destination finale, par exemple ``mathcalc3`` en renseignant dans les options de *Session* le nom de la machine hôte par ``mathcalc3``, le numéro du port local par ``22`` (car la connexion entre Argos et mathcalc3 se fera via le port ``22``), le login et le mot de passe sur ``mathcalc3`` et vérifier que le mode de connexion est bien ``SCP``.
     **Ne pas sauvegarder tout de suite, ce n'est pas fini !**

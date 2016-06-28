@@ -17,13 +17,12 @@ Localisation des imprimantes
   "bodoni","M3, 2ème étage, local 223","HP 600 M602 (LaserJet 600 M601 M602 M603)","134.206.85.249","`bodoni.univ-lille1.fr <http://bodoni.univ-lille1.fr>`_"
   "futura","M3, 3ème étage, salle 312","HP 4350dn (LaserJet P4010 Series)","134.206.85.245","`futura.univ-lille1.fr <http://futura.univ-lille1.fr>`_"
 
-.. Note:: Ces imprimantes ne sont accessibles qu'à partir du réseau de l'université.
+.. Note::
+
+   Ces imprimantes ne sont accessibles qu'à partir du réseau de l'université.
 
 Localisation des scanners
 -------------------------
 
 -  Bâtiment M2, face aux bureaux 102,104,106, à côté du fax
 -  Bâtiment M2, local imprimerie
-
-
- 

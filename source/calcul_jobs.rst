@@ -28,7 +28,7 @@ Le principe du mode batch consiste à rédiger un script contenant toutes les in
 Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qsub monjob.torque
-    213.mathcalc3
+    213.mathcalc3
 
 
 Ici, le message renvoyé ``213.mathcalc3`` correspond à l'identifiant qui est affecté au job dans la file d'attente.

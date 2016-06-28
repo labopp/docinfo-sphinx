@@ -243,15 +243,20 @@ htmlhelp_basename = 'InfoPaulPainlevedoc'
 latex_elements = {
      # The paper size ('letterpaper' or 'a4paper').
      #
-     # 'papersize': 'letterpaper',
+     'papersize': 'a4paper',
 
      # The font size ('10pt', '11pt' or '12pt').
      #
-     # 'pointsize': '10pt',
+     'pointsize': '12pt',
+
+     'fontpkg': """\
+\\usepackage[lining,semibold]{libertine}
+\\usepackage[varqu,varl]{inconsolata}
+""",
 
      # Additional stuff for the LaTeX preamble.
      #
-     # 'preamble': '',
+     'preamble': '\\setlength{\\headheight}{15pt}',
 
      # Latex figure (float) alignment
      #

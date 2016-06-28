@@ -10,9 +10,9 @@ Cette documentation est écrite avec le language de balisage léger reStructured
 
 Chaque fois que la documentation est mise à jour sur GitHub elle est automatiquement transformée en
 
-- `HTML <https://docinfo-sphinx.readthedocs.io>`_,
-- `PDF <http://readthedocs.org/projects/docinfo-sphinx/downloads/pdf/latest/>`_,
-- `EPUB <http://readthedocs.org/projects/docinfo-sphinx/downloads/epub/latest/>`_.
+- `HTML <https://labopp-docinfo.readthedocs.io>`_,
+- `PDF <http://readthedocs.org/projects/labopp-docinfo/downloads/pdf/latest/>`_,
+- `EPUB <http://readthedocs.org/projects/labopp-docinfo/downloads/epub/latest/>`_.
 
 Comment aider à l'améliorer
 ---------------------------

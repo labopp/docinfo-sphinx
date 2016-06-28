@@ -258,6 +258,10 @@ latex_elements = {
      #
      'preamble': '\\setlength{\\headheight}{15pt}',
 
+     # Sphinx 1.5 will allow customization of font in Verbatim, and
+     # particularly the size which so far was forced to be \small
+     #'fvset': '', # override fontsize=\small setting
+
      # Latex figure (float) alignment
      #
      # 'figure_align': 'htbp',

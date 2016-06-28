@@ -10,15 +10,15 @@ Afin de préparer au mieux l'installation d'un invité et lui permettre de bén�
 - L'invité ramène-t-il son ordinateur portable ?
   Si oui, il sera nécessaire de nous indiquer l'adresse physique de sa carte Ethernet (`adresse MAC <http://fr.wikipedia.org/wiki/Adresse_MAC>`_) pour une connexion filaire.
 
-   -  Sous Linux : ouvrir un terminal et taper la commande ::
+   -  Sous Linux : ouvrir un terminal et taper la commande ::
 
         /sbin/ifconfig eth0
 
-   -  Sous Mac OS : ouvrir un terminal et taper la commande ::
+   -  Sous Mac OS : ouvrir un terminal et taper la commande ::
 
         ifconfig en0
 
-   -  Sous Windows : ouvrir une invite de commandes (Menu *Démarrer*, puis *Exécuter* et taper **cmd**) et taper la commande ::
+   -  Sous Windows : ouvrir une invite de commandes (Menu *Démarrer*, puis *Exécuter* et taper **cmd**) et taper la commande ::
 
         ipconfig /all
 

@@ -3,12 +3,12 @@ Impression sous Linux
 
 #.  Dans la fenêtre qui vient de s'ouvrir, choisir l'imprimante par défaut à l'aide d'un clic droit.
 #.  Ouvrir un terminal
-#.  Taper la commande suivante ::
+#.  Taper la commande suivante ::
 
       system-config-printer
 
     .. Note:: dans certains cas, il est nécessaire d'avoir les privilèges administrateurs. Dans ce cas de figure, on remplace la commande ci-dessus par
-      ::
+      ::
 
         sudo system-config-printer
 
@@ -30,7 +30,7 @@ Définir une imprimante par défaut sur Argos
 -------------------------------------------
 
 #.  Ouvrir un terminal
-#.  Taper la commande suivante ::
+#.  Taper la commande suivante ::
 
       system-config-printer
 

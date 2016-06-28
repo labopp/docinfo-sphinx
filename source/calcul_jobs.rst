@@ -25,7 +25,7 @@ Un script Torque se présente généralement sous la forme d'un fichier texte da
 
 Le principe du mode batch consiste à rédiger un script contenant toutes les instructions nécessaires pour compiler un code, l'exécuter, copier des données... mais de façon différée. Après avoir préparé un tel script, il faut le soumettre à au serveur Torque installé sur ``mathcalc3``.
 
-Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
+Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qsub monjob.torque
     213.mathcalc3
@@ -47,7 +47,7 @@ Surveiller une file d'attente ou un job
 Surveiller l'ensemble des jobs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Pour surveiller l'ensemble des jobs soumis, il suffit de taper la commande ::
+Pour surveiller l'ensemble des jobs soumis, il suffit de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qstat -a
 
@@ -82,7 +82,7 @@ Surveiller un job
 ~~~~~~~~~~~~~~~~~
 
 Pour surveiller un job en particulier, il suffit de taper la commande
-suivante ::
+suivante ::
 
   [monlogin@mathcalc3 ~]$ qstat -f 212.mathcalc3
 
@@ -151,18 +151,18 @@ Statut d'un job
 Détruire, suspendre et relancer un job
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Pour détruire un job, il faut entrer la commande suivante ::
+Pour détruire un job, il faut entrer la commande suivante ::
 
   [monlogin@mathcalc3 ~]$ qdel JobID
 
 où ``JobID`` est l'identifiant du job que l'on peut retrouver dans la
 première colonne du tableau obtenu avec un ``qstat -a``. Pour suspendre un
-job, il faut entrer la commande suivante ::
+job, il faut entrer la commande suivante ::
 
   [monlogin@mathcalc3 ~]$ qhold JobID
 
 
-et pour le relancer ::
+et pour le relancer ::
 
   [monlogin@mathcalc3 ~]$ qrls JobID
 
@@ -174,7 +174,7 @@ Utilitaire xpbs
 
 Il est également possible d'utiliser l'interface graphique ``xpbs`` afin
 de suivre en quasi-temps réel l'évolution d'un job. Pour cela, il suffit
-de taper la commande ::
+de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ xpbs
 

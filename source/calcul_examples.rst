@@ -14,19 +14,19 @@ exhaustive <http://www.clusterresources.com/torquedocs21/usersmanual.shtml>`_
 de paramètres à spécifier de cette façon. Nous résumons ici les plus
 couramment utilisées :
 
-- Pour spécifier le nom du job (ici ``monjob``) ::
+- Pour spécifier le nom du job (ici ``monjob``) ::
 
     #PBS -N monjob
 
   Valeur par défaut : donnée par le serveur Torque.
 
-- Pour spécifier une file d'attente en particulier (ici ``q7jours``) ::
+- Pour spécifier une file d'attente en particulier (ici ``q7jours``) ::
 
     #PBS -q q7jours
 
   Valeur par défaut : q1jour.
 
-- Pour spécifier un temps maximal d'exécution (au format hh:mm:ss) ::
+- Pour spécifier un temps maximal d'exécution (au format hh:mm:ss) ::
 
     #PBS -l walltime=01:00:00
 
@@ -34,50 +34,50 @@ couramment utilisées :
 
 - Pour spécifier les ressources souhaitées :
 
-  - Pour spécifier la mémoire vive nécessaire pour l'ensemble dun job (exprimée en bytes (b), kilobytes (kb), megabytes (mb), ou en gigabytes (gb)) ::
+  - Pour spécifier la mémoire vive nécessaire pour l'ensemble dun job (exprimée en bytes (b), kilobytes (kb), megabytes (mb), ou en gigabytes (gb)) ::
 
       #PBS -l mem=1gb
 
-  - Pour spécifier la mémoire vive nécessaire par processeur ::
+  - Pour spécifier la mémoire vive nécessaire par processeur ::
 
       #PBS -l pmem=1gb
 
-  - Pour spécifier le nombre de noeuds de calcul utilisés ::
+  - Pour spécifier le nombre de noeuds de calcul utilisés ::
 
       #PBS -l nodes=2
 
     Valeur par défaut : 1 noeud.
 
-  - Pour spécifier le(s) nom(s) du(des) noeud(s) de calcul souhaité(s) (ici ``mathcalc3`` et ``mathcalc4``) ::
+  - Pour spécifier le(s) nom(s) du(des) noeud(s) de calcul souhaité(s) (ici ``mathcalc3`` et ``mathcalc4``) ::
 
     #PBS -l nodes=mathcalc3+mathcalc4
 
   Valeur par défaut : c'est le serveur Torque qui choisit.
 
-  - Pour spécifier le nombre de processeurs par noeud souhaité (ici 2 processeurs) ::
+  - Pour spécifier le nombre de processeurs par noeud souhaité (ici 2 processeurs) ::
 
       #PBS -l ppn=2
 
     Valeurs par défaut : 1 processeur par noeud.
 
   - On peut concaténer ces différents paramètres en spécifiant par exemple le nombre de processeurs selon le serveur sur lequel on lance les calculs.
-    Par exemple, pour lancer un calcul sur 3 processeurs de ``mathcalc3`` et 4 processeurs de ``mathcalc7`` en précisant que l'on alloue une mémoire vive pouvant aller jusqu'à 1Gb par processeur et que la durée maximale autorisée est d'une heure, on écrit ::
+    Par exemple, pour lancer un calcul sur 3 processeurs de ``mathcalc3`` et 4 processeurs de ``mathcalc7`` en précisant que l'on alloue une mémoire vive pouvant aller jusqu'à 1Gb par processeur et que la durée maximale autorisée est d'une heure, on écrit ::
 
       #PBS -l nodes=mathcalc3:ppn=3+mathcalc7:ppn=4,pmem=1gb,walltime=01:00:00
 
-- Pour spécifier le fichier ASCII qui va contenir tout ce qui s'afficherait dans le terminal en mode frontal ::
+- Pour spécifier le fichier ASCII qui va contenir tout ce qui s'afficherait dans le terminal en mode frontal ::
 
     #PBS -o output.dat
 
   Valeur par défaut : monjob.out, monjob étant le nom du job que l'on spécifie.
 
-- Pour spécifier le fichier ASCII qui va contenir les éventuels messages d'erreur ::
+- Pour spécifier le fichier ASCII qui va contenir les éventuels messages d'erreur ::
 
     #PBS -e error.dat
 
   Valeur par défaut : monjob.err, monjob étant le nom du job que l'on spécifie.
 
-- Pour fusionner les fichiers de sortie et d'erreurs ::
+- Pour fusionner les fichiers de sortie et d'erreurs ::
 
     #PBS -j oe
 
@@ -85,23 +85,23 @@ couramment utilisées :
 
 - Pour envoyer des alertes mail :
 
-  - Lorsque l'exécution du job commence ::
+  - Lorsque l'exécution du job commence ::
 
       #PBS -m b
 
-  - Lorsque l'exécution du job est terminée ::
+  - Lorsque l'exécution du job est terminée ::
 
       #PBS -m e
 
-  - Lorsque l'exécution du job est interrompue ::
+  - Lorsque l'exécution du job est interrompue ::
 
       #PBS -m a
 
-  - On peut combiner ces paramètres d'alerte mail. Par exemple, pour envoyer un mail au début et à la fin de l'exécution, on précise ::
+  - On peut combiner ces paramètres d'alerte mail. Par exemple, pour envoyer un mail au début et à la fin de l'exécution, on précise ::
 
       #PBS -m be
 
-  - Préciser le destinataire ::
+  - Préciser le destinataire ::
 
       #PBS -M prenom.nom@math.univ-lille1.fr
 
@@ -119,7 +119,7 @@ Exemple 1 : exécuter un code séquentiel
 
 On souhaite compiler et exécuter en mode batch le programme `HelloWorld <files/HelloWorld.f90>`_ écrit en Fortran 90.
 C'est un calcul très court, requierant très peu de mémoire.
-On se contentera donc de préciser dans le script Torque le nom du job, le serveur utilisé, les fichiers de sortie et d'erreur, ainsi que les alertes mails ::
+On se contentera donc de préciser dans le script Torque le nom du job, le serveur utilisé, les fichiers de sortie et d'erreur, ainsi que les alertes mails ::
 
   #!/bin/bash
   ### On specifie le nom du job
@@ -151,7 +151,7 @@ lien <files/Poisson_BCGStab.tar.gz>`_. Si on considère un maillage fin,
 le calcul peut s'avérer coûteux en temps de calcul, en mémoire vive et
 en espace disque. Il faut donc que le calcul soit lancé depuis un
 répertoire ``/scratch``. Le script Torque pour lancer un tel job est
-donc le suivant ::
+donc le suivant ::
 
   #!/bin/bash
   ### On specifie le nom du job
@@ -187,7 +187,7 @@ chaque processeur peut être amené à générer des fichiers. Ici, nous nous
 contenterons d'un `HelloWorld <files/HelloWorldMPI.f90>`_ programmé en
 MPI-Fortran dans lequel chaque processeur écrit son propre fichier.
 Etant donné qu'il est possible d'impliquer plusieurs serveurs pour ce
-genre de calcul, l'idée consiste à ::
+genre de calcul, l'idée consiste à ::
 
   #!/bin/bash
   ### On specifie le nom du job

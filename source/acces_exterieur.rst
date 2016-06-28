@@ -13,7 +13,7 @@ Depuis une machine Linux ou Mac OS extérieure au laboratoire
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Ouvrir un terminal et se connecter sur ``math-argos`` pour entrer dans le réseau
-privé du laboratoire ::
+privé du laboratoire ::
 
   ssh -p 8524 monlogin@math-argos.univ-lille1.fr
 
@@ -51,7 +51,7 @@ Entre une machine Linux extérieure au laboratoire et Argos
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #.  Ouvrir deux fenêtres d'un explorateur de fichiers (Nautilus, Konqueror,
-    Nemo...) et, dans l'une d'elles, indiquer le chemin suivant ::
+    Nemo...) et, dans l'une d'elles, indiquer le chemin suivant ::
 
       sftp://monlogin@math-argos.univ-lille1.fr:8524/home/monlogin
 

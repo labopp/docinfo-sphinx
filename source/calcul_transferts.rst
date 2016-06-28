@@ -11,7 +11,7 @@ Entre une machine interne au laboratoire et un serveur
 Entre une machine Linux extérieure au laboratoire et un serveur
 ---------------------------------------------------------------
 
-#.  Étape préliminaire: inscrire les serveurs dans la liste des serveurs hôtes connus par votre machine. Pour cela, il faut ouvrir le fichier ``~/.ssh/config`` avec un éditeur de texte et ajouter les lignes suivantes ::
+#.  Étape préliminaire: inscrire les serveurs dans la liste des serveurs hôtes connus par votre machine. Pour cela, il faut ouvrir le fichier ``~/.ssh/config`` avec un éditeur de texte et ajouter les lignes suivantes ::
 
       Host mathcalc2
       ProxyCommand ssh -p 8524 argos.univ-lille1.fr nc %h %p

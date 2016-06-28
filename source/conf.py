@@ -250,7 +250,7 @@ latex_elements = {
      'pointsize': '12pt',
 
      'fontpkg': """\
-\\usepackage[lining,semibold]{libertine}
+\\usepackage[lining]{libertine}
 \\usepackage[varqu,varl]{inconsolata}
 """,
 

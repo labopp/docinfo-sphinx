@@ -4,7 +4,7 @@ Transferts de fichiers
 Entre une machine interne au laboratoire et un serveur
 ------------------------------------------------------
 
-#.  Ouvrir deux fenêtres d'un explorateur de fichiers (Nautilus, Konqueror, Nemo...) et, dans l'une d'elles, indiquer le chemin suivant : ``sftp://monlogin@mathcalcN/home/monlogin``, ``N`` étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suffit de remplacer ``@mathcalcN`` par ``@mathcuda``.
+#.  Ouvrir deux fenêtres d'un explorateur de fichiers (Nautilus, Konqueror, Nemo...) et, dans l'une d'elles, indiquer le chemin suivant : ``sftp://monlogin@mathcalcN/home/monlogin``, ``N`` étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suffit de remplacer ``@mathcalcN`` par ``@mathcuda``.
 
 #.  Procéder au transfert de fichiers (dans un sens ou dans l'autre) avec un simple drag-and-drop.
 
@@ -28,7 +28,7 @@ Entre une machine Linux extérieure au laboratoire et un serveur
 
    Une fois cet ajout fait, on pourra sauter directement à l'étape 2 pour chaque transfert de fichiers !
 
-#.  Ouvrir deux fenêtres d'un explorateur de fichiers (Nautilus, Konqueror, Nemo...) et, dans l'une d'elles, indiquer le chemin suivant : ``sftp://monlogin@mathcalcN/home/monlogin``, N étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suffit de remplacer ``@mathcalcN`` par ``@mathcuda``.
+#.  Ouvrir deux fenêtres d'un explorateur de fichiers (Nautilus, Konqueror, Nemo...) et, dans l'une d'elles, indiquer le chemin suivant : ``sftp://monlogin@mathcalcN/home/monlogin``, N étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suffit de remplacer ``@mathcalcN`` par ``@mathcuda``.
 
 #.  Procéder au transfert de fichiers (dans un sens ou dans l'autre) avec un simple drag-and-drop.
 
@@ -37,14 +37,14 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 
 #.  Démarrer `Fugu <http://sourceforge.net/projects/fugussh/files/>`_. Il faut commencer par créer le tunnel SSH qui sera hébergé sur Argos. Pour cela, cliquer dans la barre de menu *SSH* > *Nouveau tunnel SSH*.
 
-#.  Dans la fenêtre qui s'ouvre, il faut remplir les champs suivants :
+#.  Dans la fenêtre qui s'ouvre, il faut remplir les champs suivants :
 
-    - **Créer le tunnel SSH vers :** ``mathcalcN``
-    - **Service ou port :** ``22``
-    - **Port local :** ``1024``
-    - **Hôte du tunnel :** ``argos.univ-lille1.fr``
-    - **Nom d'utilisateur :** ``monlogin``
-    - **Port :** ``8524``
+    - **Créer le tunnel SSH vers :** ``mathcalcN``
+    - **Service ou port :** ``22``
+    - **Port local :** ``1024``
+    - **Hôte du tunnel :** ``argos.univ-lille1.fr``
+    - **Nom d'utilisateur :** ``monlogin``
+    - **Port :** ``8524``
 
     ..
 
@@ -54,11 +54,11 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 
 #.  Cliquer sur *Ouvrir le tunnel*. Cela ferme la fenêtre d'ouverture de tunnel et en ouvre une autre permettant de refermer le tunnel quand on le souhaite (voir dernière étape).
 
-#.  Revenir à la fenêtre principale de Fugu. Cette fois, on renseigne les champs suivants :
+#.  Revenir à la fenêtre principale de Fugu. Cette fois, on renseigne les champs suivants :
 
-    - **Se connecter à :** ``localhost``
-    - **Nom d'utilisateur :** ``monlogin``
-    - **Port :** ``1024``
+    - **Se connecter à :** ``localhost``
+    - **Nom d'utilisateur :** ``monlogin``
+    - **Port :** ``1024``
 
     ..
 

@@ -12,27 +12,27 @@ Afin de spécifier certains paramètres relatives à l'exécution d'un
 calcul, on utilise l'entame ``#PBS``. Il existe une `liste
 exhaustive <http://www.clusterresources.com/torquedocs21/usersmanual.shtml>`_
 de paramètres à spécifier de cette façon. Nous résumons ici les plus
-couramment utilisées :
+couramment utilisées :
 
 - Pour spécifier le nom du job (ici ``monjob``) ::
 
     #PBS -N monjob
 
-  Valeur par défaut : donnée par le serveur Torque.
+  Valeur par défaut : donnée par le serveur Torque.
 
 - Pour spécifier une file d'attente en particulier (ici ``q7jours``) ::
 
     #PBS -q q7jours
 
-  Valeur par défaut : q1jour.
+  Valeur par défaut : q1jour.
 
 - Pour spécifier un temps maximal d'exécution (au format hh:mm:ss) ::
 
     #PBS -l walltime=01:00:00
 
-  Valeur par défaut : la durée maximale d'exécution associée à la file d'attente spécifiée.
+  Valeur par défaut : la durée maximale d'exécution associée à la file d'attente spécifiée.
 
-- Pour spécifier les ressources souhaitées :
+- Pour spécifier les ressources souhaitées :
 
   - Pour spécifier la mémoire vive nécessaire pour l'ensemble dun job (exprimée en bytes (b), kilobytes (kb), megabytes (mb), ou en gigabytes (gb)) ::
 
@@ -46,19 +46,19 @@ couramment utilisées :
 
       #PBS -l nodes=2
 
-    Valeur par défaut : 1 noeud.
+    Valeur par défaut : 1 noeud.
 
   - Pour spécifier le(s) nom(s) du(des) noeud(s) de calcul souhaité(s) (ici ``mathcalc3`` et ``mathcalc4``) ::
 
     #PBS -l nodes=mathcalc3+mathcalc4
 
-  Valeur par défaut : c'est le serveur Torque qui choisit.
+  Valeur par défaut : c'est le serveur Torque qui choisit.
 
   - Pour spécifier le nombre de processeurs par noeud souhaité (ici 2 processeurs) ::
 
       #PBS -l ppn=2
 
-    Valeurs par défaut : 1 processeur par noeud.
+    Valeurs par défaut : 1 processeur par noeud.
 
   - On peut concaténer ces différents paramètres en spécifiant par exemple le nombre de processeurs selon le serveur sur lequel on lance les calculs.
     Par exemple, pour lancer un calcul sur 3 processeurs de ``mathcalc3`` et 4 processeurs de ``mathcalc7`` en précisant que l'on alloue une mémoire vive pouvant aller jusqu'à 1Gb par processeur et que la durée maximale autorisée est d'une heure, on écrit ::
@@ -69,21 +69,21 @@ couramment utilisées :
 
     #PBS -o output.dat
 
-  Valeur par défaut : monjob.out, monjob étant le nom du job que l'on spécifie.
+  Valeur par défaut : monjob.out, monjob étant le nom du job que l'on spécifie.
 
 - Pour spécifier le fichier ASCII qui va contenir les éventuels messages d'erreur ::
 
     #PBS -e error.dat
 
-  Valeur par défaut : monjob.err, monjob étant le nom du job que l'on spécifie.
+  Valeur par défaut : monjob.err, monjob étant le nom du job que l'on spécifie.
 
 - Pour fusionner les fichiers de sortie et d'erreurs ::
 
     #PBS -j oe
 
-  Valeur par défaut : désactivé.
+  Valeur par défaut : désactivé.
 
-- Pour envoyer des alertes mail :
+- Pour envoyer des alertes mail :
 
   - Lorsque l'exécution du job commence ::
 
@@ -114,7 +114,7 @@ Dans les scripts Torque présentés ci-dessous, les lignes surlignées en
 bleu correspondent à des instructions Unix à modifier pour adapter le
 script à un autre calcul.
 
-Exemple 1 : exécuter un code séquentiel
+Exemple 1 : exécuter un code séquentiel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On souhaite compiler et exécuter en mode batch le programme `HelloWorld <files/HelloWorld.f90>`_ écrit en Fortran 90.
@@ -141,7 +141,7 @@ On se contentera donc de préciser dans le script Torque le nom du job, le serve
   ### On lance l'executable
   ./HelloWorld
 
-Exemple 2 : exécuter un code séquentiel avec gestion de fichiers de résultats
+Exemple 2 : exécuter un code séquentiel avec gestion de fichiers de résultats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On souhaite résoudre l'équation de Poisson 2D avec une méthode de
@@ -179,7 +179,7 @@ donc le suivant ::
   ### On execute le code
   ./poisson.seq
 
-Exemple 3 : exécuter un code parallèle avec gestion de fichiers de résultats
+Exemple 3 : exécuter un code parallèle avec gestion de fichiers de résultats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un dernier exemple est consacré à l'exécution d'un calcul parallèle où
@@ -218,5 +218,5 @@ genre de calcul, l'idée consiste à ::
   rm -rf *.dat
 
 #.  Compiler et exécuter le code dans le ``/home``,
-#.  Déplacer les fichiers produits dans un répertoire ``/scratch`` :
+#.  Déplacer les fichiers produits dans un répertoire ``/scratch`` :
     cette étape est un peu délicate car il est difficile de savoir à l'avance quel serveur va effectuer le calcul, donc on ne sait pas dans quel ``/scratch`` les fichiers de résultats seront déposés à la fin du job. Pour être certain de ce répertoire, on fait le transfert de fichiers avec la commande ``scp``.

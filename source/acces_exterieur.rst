@@ -85,7 +85,7 @@ Entre une machine Windows extérieure au laboratoire et Argos
 
 #.  Démarrer `WinSCP <http://winscp.net/eng/docs/lang:fr>`_.
     Afin de se connecter à ``math-argos``, il faut créer une nouvelle session
-    dans laquelle il faut renseigner les champs suivants : dans l'onglet
+    dans laquelle il faut renseigner les champs suivants : dans l'onglet
     *Session*, il faut indiquer ``math-argos.univ-lille1.fr`` pour le nom
     d'hôte, ``8524`` pour le numéro du port, indiquer le login et le mot de
     passe, et enfin vérifier que le mode de connexion est bien ``SCP``.

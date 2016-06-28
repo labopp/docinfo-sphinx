@@ -17,7 +17,7 @@ N étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suf
 Depuis une machine Linux ou Mac OS extérieure au laboratoire
 ------------------------------------------------------------
 
-Méthode avec rebond en 2 lignes sans mode graphique :
+Méthode avec rebond en 2 lignes sans mode graphique :
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #.  Ouvrir un terminal et se connecter sur ``argos`` pour entrer dans le réseau privé du laboratoire ::
@@ -33,7 +33,7 @@ Méthode avec rebond en 2 lignes sans mode graphique :
 
    ``N`` étant le numéro du serveur voulu. Pour une connexion à ``mathcuda``, il suffit de remplacer ``@mathcalcN`` par ``@mathcuda``.
 
-Méthode avec rebond en une ligne sans mode graphique :
+Méthode avec rebond en une ligne sans mode graphique :
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il suffit d'ouvrir un terminal et taper la commande ::

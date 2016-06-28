@@ -7,7 +7,7 @@ Soumission de jobs scriptés
 
 Un serveur Torque-Maui a été installé sur les machines de calcul du laboratoire Paul Painlevé. Ce logiciel est utilisé pour lancer des calculs longs ou bien des calculs courts mais très nombreux. En effet, lancer de tels calculs «en frontal» (c'est-à-dire en entrant directement la commande d'exécution dans un terminal Unix) même avec l'utilitaire Nohup peut poser des problèmes de gestion des ressources. Il s'agit certes de la méthode la plus simple pour lancer des calculs, mais elle présente l'inconvénient de lancer les calculs dès que la commande d'exécution est saisie. En période de forte demande, cela peut donc poser problème à l'ensemble des utilisateurs.
 
-Le serveur Torque permet de :
+Le serveur Torque permet de :
 
 - Soumettre des calculs en différé,
 - Indiquer de façon précise les ressources en temps, en mémoire, en nombre de coeurs de calcul... dont on aura besoin,
@@ -51,7 +51,7 @@ Pour surveiller l'ensemble des jobs soumis, il suffit de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qstat -a
 
-La réponse sera le tableau suivant :
+La réponse sera le tableau suivant :
 
 .. code-block:: none
 
@@ -69,11 +69,11 @@ La réponse sera le tableau suivant :
 :SessID: numéro de la session associée au job s'il est en cours
    d'exécution,
 :NDS: le nombre de noeuds de calcul requis par le job (valeur par
-   défaut : 1),
-:TSK: nombre de tâches requises par le job (valeur par défaut :
+   défaut : 1),
+:TSK: nombre de tâches requises par le job (valeur par défaut :
    1),
 :Req'd Memory: mémoire vive requise par l'utilisateur,
-:Req'd Time: temps de calcul requis (valeur par défaut : le temps
+:Req'd Time: temps de calcul requis (valeur par défaut : le temps
    limite associé à la file d'attente),
 :S: statut du job (voir :ref:`ci-dessous <statutJob>`),
 :Elap Time: temps écoulé depuis le début de l'exécution.
@@ -86,7 +86,7 @@ suivante ::
 
   [monlogin@mathcalc3 ~]$ qstat -f 212.mathcalc3
 
-La réponse sera de la forme suivante :
+La réponse sera de la forme suivante :
 
 .. _statutJob:
 

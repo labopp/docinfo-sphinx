@@ -14,7 +14,7 @@ Les machines gérées par l'équipe informatique du laboratoire. Cela concerne l
 Suis-je obligé de sécuriser ma machine ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Oui : à partir du moment où vous êtes connecté à un réseau, vous pouvez échanger des données avec les autres personnes également connectés, même à votre insu. Il est donc nécessaire de protéger son ordinateur et/ou son smartphone.
+Oui : à partir du moment où vous êtes connecté à un réseau, vous pouvez échanger des données avec les autres personnes également connectés, même à votre insu. Il est donc nécessaire de protéger son ordinateur et/ou son smartphone.
 
 Comment protéger ma machine efficacement ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,6 +40,6 @@ Antivirus
 
 Tout dépend du système d'exploitation utilisé. Si vous travaillez sous Windows, un antivirus est vivement recommandé. Sous Mac OS ou Linux, cette nécessité est moindre mais pas négligeable, surtout pour les smartphones !
 
-Certains antivirus sont payants, d'autres gratuits. L'université dispose d'un marché Logiciels proposant de nombreux logiciels dont des solutions antivirus : plus de renseignements sont disponibles sur `Logi-Lille <http://logilille.univ-lille1.fr>`_ (authentification nécessaire pour entrer sur ce site).
+Certains antivirus sont payants, d'autres gratuits. L'université dispose d'un marché Logiciels proposant de nombreux logiciels dont des solutions antivirus : plus de renseignements sont disponibles sur `Logi-Lille <http://logilille.univ-lille1.fr>`_ (authentification nécessaire pour entrer sur ce site).
 
 Gardez à l'esprit que, quelque soit l'antivirus installé, **il faut absolument tenir à jour sa liste des signatures de virus via des mises à jours quotidiennes**.

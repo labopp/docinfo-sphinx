@@ -27,7 +27,7 @@ versions de Windows, certaines étapes peuvent être différentes.
 
       |image2|
 
-#. A l'étape suivante, il faut indiquer soit l'adresse IP soit le nom d'hôte
+#. À l'étape suivante, il faut indiquer soit l'adresse IP soit le nom d'hôte
    de l'imprimante visée et vérifier que le type de périphérique est bien
    réglé sur ``Détection automatique`` et que la case ``Interroger
    l'imprimante et sélectionner automatiquement le pilote à utiliser`` est

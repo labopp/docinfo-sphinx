@@ -9,10 +9,10 @@ Informatique du laboratoire Paul Painlevé
 
   acces_exterieur
   accueil_des_invites
-  calcul
   impression
   messagerie
   pages_perso
   portables
   securite
+  calcul
   documentation

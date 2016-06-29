@@ -55,12 +55,12 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 
 #. Dans la fenêtre qui s'ouvre, il faut remplir les champs suivants :
 
-   -  **Créer le tunnel SSH vers :** ``mathcalcN``
-   -  **Service ou port :** ``22``
-   -  **Port local :** ``1024``
-   -  **Hôte du tunnel :** ``argos.univ-lille1.fr``
-   -  **Nom d'utilisateur :** ``monlogin``
-   -  **Port :** ``8524``
+   -  **Créer le tunnel SSH vers :** ``mathcalcN``
+   -  **Service ou port :** ``22``
+   -  **Port local :** ``1024``
+   -  **Hôte du tunnel :** ``argos.univ-lille1.fr``
+   -  **Nom d'utilisateur :** ``monlogin``
+   -  **Port :** ``8524``
 
    ..
 
@@ -80,9 +80,9 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 #. Revenir à la fenêtre principale de Fugu. Cette fois, on renseigne les
    champs suivants :
 
-   -  **Se connecter à :** ``localhost``
-   -  **Nom d'utilisateur :** ``monlogin``
-   -  **Port :** ``1024``
+   -  **Se connecter à :** ``localhost``
+   -  **Nom d'utilisateur :** ``monlogin``
+   -  **Port :** ``1024``
 
    ..
 

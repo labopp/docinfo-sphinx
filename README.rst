@@ -36,7 +36,7 @@ utilisant Pandoc_.
 .. _Sphinx: https://fr.wikipedia.org/wiki/Sphinx_(g%C3%A9n%C3%A9rateur_de_documentation)
 .. _Pandoc: https://fr.wikipedia.org/wiki/Pandoc
 
-La liste des contributeurs dans l'ordre chronologique :
+La liste des contributeurs dans l'ordre chronologique :
 
 - Alexandre Mouton
 - Ingrid Violet

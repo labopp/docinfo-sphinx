@@ -68,7 +68,9 @@ Afin de lancer un calcul, il est possible de le faire «en frontal»,
 c'est-à-dire en tapant directement la commande associée dans le terminal comme
 par exemple ::
 
-  $ gcc HelloWorld.c -o HelloWorld$ ./HelloWorld HelloWorld
+  $ gcc HelloWorld.c -o HelloWorld
+  
+  $ ./HelloWorld HelloWorld
 
 Cependant, si l'utilisateur décide de lancer un calcul dont il ne connaît ni
 le temps d'exécution ni la mémoire requise, ni l'espace disque requis, cela

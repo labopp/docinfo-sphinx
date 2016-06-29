@@ -61,7 +61,7 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
     - **Nom d'utilisateur :** ``monlogin``
     - **Port :** ``8524``
 
-    ::
+    ..
 
       |image0|
 
@@ -83,7 +83,7 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
     - **Nom d'utilisateur :** ``monlogin``
     - **Port :** ``1024``
 
-    ::
+    ..
 
       |image1|
 
@@ -104,7 +104,7 @@ Entre une machine MacOS extérieure au laboratoire et un serveur
 Entre une machine Windows extérieure au laboratoire et un serveur
 -----------------------------------------------------------------
 
-::
+..
 
   |image2|
 

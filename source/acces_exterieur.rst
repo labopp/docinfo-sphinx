@@ -19,10 +19,10 @@ réseau privé du laboratoire ::
 
 .. note::
 
-   - l'option ``-p 8524`` est obligatoire (il s'agit du numéro de port ssh).
-   - les options d'interface en mode graphique comme ``-X`` où ``-Y`` sont
-     désormais inutilisables. Il est rappelé que la machine math-argos n'est
-     qu'un sas d'entrée dans le réseau privé du laboratoire.
+   -  l'option ``-p 8524`` est obligatoire (il s'agit du numéro de port ssh).
+   -  les options d'interface en mode graphique comme ``-X`` où ``-Y`` sont
+      désormais inutilisables. Il est rappelé que la machine math-argos n'est
+      qu'un sas d'entrée dans le réseau privé du laboratoire.
 
 
 Depuis une machine Windows extérieure au laboratoire

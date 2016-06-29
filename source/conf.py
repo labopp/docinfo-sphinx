@@ -255,8 +255,12 @@ latex_elements = {
 """,
 
      # Additional stuff for the LaTeX preamble.
-     #
-     'preamble': '\\setlength{\\headheight}{15pt}',
+     # fix temporaire d'un bug ennuyeux de Sphinx 1.4.4 avec \code
+     # (espace en trop après inline code) qui sera réglé en 1.4.5
+     'preamble': """\
+\\setlength{\\headheight}{15pt}
+\\DeclareRobustCommand{\\code}[1]{{\\@noligs\\scantokens{\\texttt{#1}\\relax}}}
+""",
 
      # Sphinx 1.5 will allow customization of font in Verbatim, and
      # particularly the size which so far was forced to be \small

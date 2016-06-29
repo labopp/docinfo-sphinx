@@ -259,7 +259,9 @@ latex_elements = {
      # (espace en trop après inline code) qui sera réglé en 1.4.5
      'preamble': """\
 \\setlength{\\headheight}{15pt}
+\\makeatletter
 \\DeclareRobustCommand{\\code}[1]{{\\@noligs\\scantokens{\\texttt{#1}\\relax}}}
+\\makeatother
 """,
 
      # Sphinx 1.5 will allow customization of font in Verbatim, and

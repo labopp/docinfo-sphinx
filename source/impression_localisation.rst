@@ -40,13 +40,12 @@ Localisation des imprimantes
 |        | 134.206.85.245                                | `futura.univ-lille1.fr <http://futura.univ-lille1.fr>`_ |
 +--------+-----------------------------------------------+---------------------------------------------------------+
 
-.. Note:: Ces imprimantes ne sont accessibles qu'à partir du réseau de l'université.
+.. Note::
+
+   Ces imprimantes ne sont accessibles qu'à partir du réseau de l'université.
 
 Localisation des scanners
 -------------------------
 
 -  Bâtiment M2, face aux bureaux 102,104,106, à côté du fax
 -  Bâtiment M2, local imprimerie
-
-
- 

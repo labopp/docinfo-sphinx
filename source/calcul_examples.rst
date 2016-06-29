@@ -30,11 +30,14 @@ couramment utilisées :
 
     #PBS -l walltime=01:00:00
 
-  Valeur par défaut : la durée maximale d'exécution associée à la file d'attente spécifiée.
+  Valeur par défaut : la durée maximale d'exécution associée à la file
+  d'attente spécifiée.
 
 - Pour spécifier les ressources souhaitées :
 
-  - Pour spécifier la mémoire vive nécessaire pour l'ensemble dun job (exprimée en bytes (b), kilobytes (kb), megabytes (mb), ou en gigabytes (gb)) ::
+  - Pour spécifier la mémoire vive nécessaire pour l'ensemble dun job
+    (exprimée en bytes (b), kilobytes (kb), megabytes (mb), ou en gigabytes
+    (gb)) ::
 
       #PBS -l mem=1gb
 
@@ -48,30 +51,39 @@ couramment utilisées :
 
     Valeur par défaut : 1 noeud.
 
-  - Pour spécifier le(s) nom(s) du(des) noeud(s) de calcul souhaité(s) (ici ``mathcalc3`` et ``mathcalc4``) ::
+  - Pour spécifier le(s) nom(s) du(des) noeud(s) de calcul souhaité(s) (ici
+    ``mathcalc3`` et ``mathcalc4``) ::
 
     #PBS -l nodes=mathcalc3+mathcalc4
 
   Valeur par défaut : c'est le serveur Torque qui choisit.
 
-  - Pour spécifier le nombre de processeurs par noeud souhaité (ici 2 processeurs) ::
+  - Pour spécifier le nombre de processeurs par noeud souhaité (ici 2
+    processeurs) ::
 
       #PBS -l ppn=2
 
     Valeurs par défaut : 1 processeur par noeud.
 
-  - On peut concaténer ces différents paramètres en spécifiant par exemple le nombre de processeurs selon le serveur sur lequel on lance les calculs.
-    Par exemple, pour lancer un calcul sur 3 processeurs de ``mathcalc3`` et 4 processeurs de ``mathcalc7`` en précisant que l'on alloue une mémoire vive pouvant aller jusqu'à 1Gb par processeur et que la durée maximale autorisée est d'une heure, on écrit ::
+  - On peut concaténer ces différents paramètres en spécifiant par exemple le
+    nombre de processeurs selon le serveur sur lequel on lance les calculs.
+
+    Par exemple, pour lancer un calcul sur 3 processeurs de ``mathcalc3`` et 4
+    processeurs de ``mathcalc7`` en précisant que l'on alloue une mémoire vive
+    pouvant aller jusqu'à 1Gb par processeur et que la durée maximale
+    autorisée est d'une heure, on écrit ::
 
       #PBS -l nodes=mathcalc3:ppn=3+mathcalc7:ppn=4,pmem=1gb,walltime=01:00:00
 
-- Pour spécifier le fichier ASCII qui va contenir tout ce qui s'afficherait dans le terminal en mode frontal ::
+- Pour spécifier le fichier ASCII qui va contenir tout ce qui s'afficherait
+  dans le terminal en mode frontal ::
 
     #PBS -o output.dat
 
   Valeur par défaut : monjob.out, monjob étant le nom du job que l'on spécifie.
 
-- Pour spécifier le fichier ASCII qui va contenir les éventuels messages d'erreur ::
+- Pour spécifier le fichier ASCII qui va contenir les éventuels messages
+  d'erreur ::
 
     #PBS -e error.dat
 
@@ -97,7 +109,8 @@ couramment utilisées :
 
       #PBS -m a
 
-  - On peut combiner ces paramètres d'alerte mail. Par exemple, pour envoyer un mail au début et à la fin de l'exécution, on précise ::
+  - On peut combiner ces paramètres d'alerte mail. Par exemple, pour envoyer
+    un mail au début et à la fin de l'exécution, on précise ::
 
       #PBS -m be
 
@@ -117,9 +130,12 @@ script à un autre calcul.
 Exemple 1 : exécuter un code séquentiel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On souhaite compiler et exécuter en mode batch le programme `HelloWorld <files/HelloWorld.f90>`_ écrit en Fortran 90.
+On souhaite compiler et exécuter en mode batch le programme `HelloWorld
+<files/HelloWorld.f90>`_ écrit en Fortran 90.
 C'est un calcul très court, requierant très peu de mémoire.
-On se contentera donc de préciser dans le script Torque le nom du job, le serveur utilisé, les fichiers de sortie et d'erreur, ainsi que les alertes mails ::
+On se contentera donc de préciser dans le script Torque le nom du job, le
+serveur utilisé, les fichiers de sortie et d'erreur, ainsi que les alertes
+mails ::
 
   #!/bin/bash
   ### On specifie le nom du job
@@ -219,4 +235,8 @@ genre de calcul, l'idée consiste à ::
 
 #.  Compiler et exécuter le code dans le ``/home``,
 #.  Déplacer les fichiers produits dans un répertoire ``/scratch`` :
-    cette étape est un peu délicate car il est difficile de savoir à l'avance quel serveur va effectuer le calcul, donc on ne sait pas dans quel ``/scratch`` les fichiers de résultats seront déposés à la fin du job. Pour être certain de ce répertoire, on fait le transfert de fichiers avec la commande ``scp``.
+    cette étape est un peu délicate car il est difficile de savoir à l'avance
+    quel serveur va effectuer le calcul, donc on ne sait pas dans quel
+    ``/scratch`` les fichiers de résultats seront déposés à la fin du job.
+    Pour être certain de ce répertoire, on fait le transfert de fichiers avec
+    la commande ``scp``.

@@ -5,41 +5,83 @@ Soumission de jobs scriptés
 
 .. highlight:: bash
 
-Un serveur Torque-Maui a été installé sur les machines de calcul du laboratoire Paul Painlevé. Ce logiciel est utilisé pour lancer des calculs longs ou bien des calculs courts mais très nombreux. En effet, lancer de tels calculs «en frontal» (c'est-à-dire en entrant directement la commande d'exécution dans un terminal Unix) même avec l'utilitaire Nohup peut poser des problèmes de gestion des ressources. Il s'agit certes de la méthode la plus simple pour lancer des calculs, mais elle présente l'inconvénient de lancer les calculs dès que la commande d'exécution est saisie. En période de forte demande, cela peut donc poser problème à l'ensemble des utilisateurs.
+Un serveur Torque-Maui a été installé sur les machines de calcul du
+laboratoire Paul Painlevé. Ce logiciel est utilisé pour lancer des calculs
+longs ou bien des calculs courts mais très nombreux. En effet, lancer de tels
+calculs «en frontal» (c'est-à-dire en entrant directement la commande
+d'exécution dans un terminal Unix) même avec l'utilitaire Nohup peut poser des
+problèmes de gestion des ressources. Il s'agit certes de la méthode la plus
+simple pour lancer des calculs, mais elle présente l'inconvénient de lancer
+les calculs dès que la commande d'exécution est saisie. En période de forte
+demande, cela peut donc poser problème à l'ensemble des utilisateurs.
 
 Le serveur Torque permet de :
 
 - Soumettre des calculs en différé,
-- Indiquer de façon précise les ressources en temps, en mémoire, en nombre de coeurs de calcul... dont on aura besoin,
+- Indiquer de façon précise les ressources en temps, en mémoire, en nombre de
+  coeurs de calcul... dont on aura besoin,
 - Faire passer les calculs peu gourmands avant les très gros calculs,
 - Suivre l'évolution d'un job,
 - Recevoir des alertes par mail du début ou de la fin d'exécution d'un job,
 - S'informer sur l'occupation des ressources.
 
-.. Warning:: La soumission et la gestion de jobs ne peut se faire qu'en étant connecté à ``mathcalc3``, même si un job peut être exécuté sur un autre serveur ``mathcalc``.
+.. Warning:: 
+
+   La soumission et la gestion de jobs ne peut se faire qu'en étant connecté à
+   ``mathcalc3``, même si un job peut être exécuté sur un autre serveur
+   ``mathcalc``.
 
 Soumettre un job scripté
 ------------------------
 
-Un script Torque se présente généralement sous la forme d'un fichier texte dans lequel on peut spécifier de nombreux paramètres comme la durée maximale d'exécution, la mémoire maximale imposée, etc... Plusieurs exemples de scripts sont disponibles sur :ref:`cette page <ExamplesTorque>`.
+Un script Torque se présente généralement sous la forme d'un fichier texte
+dans lequel on peut spécifier de nombreux paramètres comme la durée maximale
+d'exécution, la mémoire maximale imposée, etc... Plusieurs exemples de scripts
+sont disponibles sur :ref:`cette page <ExamplesTorque>`.
 
-Le principe du mode batch consiste à rédiger un script contenant toutes les instructions nécessaires pour compiler un code, l'exécuter, copier des données... mais de façon différée. Après avoir préparé un tel script, il faut le soumettre à au serveur Torque installé sur ``mathcalc3``.
+Le principe du mode batch consiste à rédiger un script contenant toutes les
+instructions nécessaires pour compiler un code, l'exécuter, copier des
+données... mais de façon différée. Après avoir préparé un tel script, il faut
+le soumettre à au serveur Torque installé sur ``mathcalc3``.
 
-Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
+Pour soumettre le job scripté ``monjob.torque``, il suffit d'ouvrir un
+terminal, de se connecter à ``mathcalc3`` et de taper la commande ::
 
   [monlogin@mathcalc3 ~]$ qsub monjob.torque
     213.mathcalc3
 
 
-Ici, le message renvoyé ``213.mathcalc3`` correspond à l'identifiant qui est affecté au job dans la file d'attente.
+Ici, le message renvoyé ``213.mathcalc3`` correspond à l'identifiant qui est
+affecté au job dans la file d'attente.
 
-Ce job sera alors placé dans l'une des 3 files d'attente disponibles (``q1jour`` pour une durée d'exécution limitée à 24 heures, ``q7jours`` pour une semaine, ``q30jours`` pour 30 jours). **Si le calcul lancé dépasse la durée maximale autorisée par la file d'attente, il sera purement et simplement arrêté.** Il faut donc au préalable avoir une idée relativement précise du temps de calcul nécessaire.
+Ce job sera alors placé dans l'une des 3 files d'attente disponibles
+(``q1jour`` pour une durée d'exécution limitée à 24 heures, ``q7jours`` pour
+une semaine, ``q30jours`` pour 30 jours). **Si le calcul lancé dépasse la
+durée maximale autorisée par la file d'attente, il sera purement et simplement
+arrêté.** Il faut donc au préalable avoir une idée relativement précise du
+temps de calcul nécessaire.
 
-Par défaut, la soumission du script ``monjob.torque`` donnera lieu à la création des fichiers ``monjob.err`` et ``monjob.out`` qui vont contenir respectivement les erreurs rencontrées pendant l'exécution et tout se qui s'afficherait dans le terminal.
+Par défaut, la soumission du script ``monjob.torque`` donnera lieu à la
+création des fichiers ``monjob.err`` et ``monjob.out`` qui vont contenir
+respectivement les erreurs rencontrées pendant l'exécution et tout se qui
+s'afficherait dans le terminal.
 
 .. Warning::
-  - Si le job soumis doit donner lieu à la création de fichiers de résultats, il est important de bien spécifier quelque part dans le script Torque où l'on se place, par exemple à l'aide de la commande ``cd`` (voir les :ref:`exemples de scripts <ExamplesTorque>`). En effet, par défaut, le serveur Torque effectue les calculs dans un répertoire temporaire qui est effacé dès que le job est terminé.
-  - La partie du ``/home`` réservée à chaque utilisateur est limitée et n'est pas destinée à stocker des quantités astronomiques de résultats numériques. Si l'exécution d'un calcul requiert un espace disque très important (plusieurs gigaoctets), il est recommandé de déplacer l'exécution du job dans un répertoire ``/scratch`` (voir les :ref:`exemples de scripts <ExamplesTorque>`). Il faut toutefois garder à l'esprit que les répertoires ``/scratch`` ne sont généralement pas sauvegardés.
+
+  - Si le job soumis doit donner lieu à la création de fichiers de résultats,
+    il est important de bien spécifier quelque part dans le script Torque où
+    l'on se place, par exemple à l'aide de la commande ``cd`` (voir les
+    :ref:`exemples de scripts <ExamplesTorque>`). En effet, par défaut, le
+    serveur Torque effectue les calculs dans un répertoire temporaire qui
+    est effacé dès que le job est terminé.
+  - La partie du ``/home`` réservée à chaque utilisateur est limitée et n'est
+    pas destinée à stocker des quantités astronomiques de résultats
+    numériques. Si l'exécution d'un calcul requiert un espace disque très
+    important (plusieurs gigaoctets), il est recommandé de déplacer
+    l'exécution du job dans un répertoire ``/scratch`` (voir les
+    :ref:`exemples de scripts <ExamplesTorque>`). Il faut toutefois garder à
+    l'esprit que les répertoires ``/scratch`` ne sont généralement pas
+    sauvegardés.
 
 Surveiller une file d'attente ou un job
 ---------------------------------------

@@ -29,13 +29,14 @@ répertoire séparé ``/scratch`` destiné à stocker des fichiers inutilisés a
 de délester la partition ``/home``.
 
 .. csv-table::
-    :header: "Serveur","Nombre de CPUs","Nombre de coeurs","Cadence de chaque coeur","Taille du cache","Espace disque","Mémoire vive"
+   :header: "Serveur","Nombre de CPUs","Nombre de coeurs",
+   "Cadence de chaque coeur","Taille du cache","Espace disque","Mémoire vive"
 
-    "mathcalc2","8 x Intel Xeon X5680","12","3.33 GHz","12 Mo","402 Go","32 Go"
-    "mathcalc3","8 x Intel Xeon X5355","8","2.66 GHz","4 Mo","??","13 Go"
-    "mathcalc4","8 x Intel Xeon X5460","8","3.16 GHz","6 Mo","476 Go","30 Go"
-    "mathcalc7","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","52 Go"
-    "mathcalc8","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","54 Go"
+   "mathcalc2","8 x Intel Xeon X5680","12","3.33 GHz","12 Mo","402 Go","32 Go"
+   "mathcalc3","8 x Intel Xeon X5355","8","2.66 GHz","4 Mo","??","13 Go"
+   "mathcalc4","8 x Intel Xeon X5460","8","3.16 GHz","6 Mo","476 Go","30 Go"
+   "mathcalc7","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","52 Go"
+   "mathcalc8","12 x Intel Xeon X5680","24","3.33 GHz","12 Mo","502 Go","54 Go"
 
 Le serveur ``mathcuda`` embarque une carte graphique `Nvidia Tesla C2050
 <http://www.nvidia.fr/object/product_tesla_C2050_C2070_fr.html>`_ (448 coeurs
@@ -44,7 +45,8 @@ codes programmés en langage CUDA© et au calcul sur processeur graphique. Le
 répertoire ``/home`` de ``mathcuda`` est indépendant de celui des
 ``mathcalc``.
 
-Le répertoire ``/home`` des serveurs de calcul est indépendant de celui d'Argos.
+Le répertoire ``/home`` des serveurs de calcul est indépendant de celui
+d'Argos.
 
 Ressources logiciels
 --------------------
@@ -53,13 +55,16 @@ L'ensemble des serveurs de calcul du laboratoire fonctionnent actuellement
 avec le système d'exploitation `Ubuntu 12.04.3 Server Edition
 <http://www.ubuntu.com/server>`_.
 
-- Compilateurs : gfortran 4.6.3, ifort (Intel-Fortran), gcc 4.6.3, gcc34, icc
-  (Intel-C), g++ 4.6.3, g++34, mpicc, mpif90, python, python2.7, javac, ...
-- Librairies : Intel MKL, FFTW 3, Suitesparse 3.6.1-4, Scalapack 1.7.5, Silo
-  4.6.1, HDF5 1.8.5, ...
-- Logiciels : Matlab 2012, Scilab 5.3.1, gmsh 2.5.1, R 2.15.2, sage 5.11,
-  visit 2.6.3, FreeFem++, gimp 2.6, gnuplot 4.4, octave 3.2.4, paraview
-  3.14.1, ...
+Compilateurs :
+   gfortran 4.6.3, ifort (Intel-Fortran), gcc 4.6.3, gcc34, icc
+   (Intel-C), g++ 4.6.3, g++34, mpicc, mpif90, python, python2.7, javac, ...
+Librairies :
+   Intel MKL, FFTW 3, Suitesparse 3.6.1-4, Scalapack 1.7.5, Silo
+   4.6.1, HDF5 1.8.5, ...
+Logiciels :
+   Matlab 2012, Scilab 5.3.1, gmsh 2.5.1, R 2.15.2, sage 5.11,
+   visit 2.6.3, FreeFem++, gimp 2.6, gnuplot 4.4, octave 3.2.4, paraview
+   3.14.1, ...
 
 Utilisation des ressources
 --------------------------
@@ -68,9 +73,9 @@ Afin de lancer un calcul, il est possible de le faire «en frontal»,
 c'est-à-dire en tapant directement la commande associée dans le terminal comme
 par exemple ::
 
-  $ gcc HelloWorld.c -o HelloWorld
-  
-  $ ./HelloWorld HelloWorld
+   $ gcc HelloWorld.c -o HelloWorld
+
+   $ ./HelloWorld HelloWorld
 
 Cependant, si l'utilisateur décide de lancer un calcul dont il ne connaît ni
 le temps d'exécution ni la mémoire requise, ni l'espace disque requis, cela

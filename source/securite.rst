@@ -27,13 +27,13 @@ smartphone.
 Comment protéger ma machine efficacement ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Effectuer des mises à jour du système d'exploitation et se renseigner sur
-  leur robustesse,
-- Mettre à jour les logiciels installés en plus du système d'exploitation,
-- Installer un antivirus et **maintenir à jour la liste des signatures de
-  virus**,
-- Effectuer régulièrement des sauvegardes,
-- Activer des dispositifs de protection supplémentaires comme un pare-feu.
+-  Effectuer des mises à jour du système d'exploitation et se renseigner sur
+   leur robustesse,
+-  Mettre à jour les logiciels installés en plus du système d'exploitation,
+-  Installer un antivirus et **maintenir à jour la liste des signatures de
+   virus**,
+-  Effectuer régulièrement des sauvegardes,
+-  Activer des dispositifs de protection supplémentaires comme un pare-feu.
 
 Mises à jour du système d'exploitation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,8 +60,8 @@ Windows, un antivirus est vivement recommandé. Sous Mac OS ou Linux, cette
 nécessité est moindre mais pas négligeable, surtout pour les smartphones !
 
 Certains antivirus sont payants, d'autres gratuits. L'université dispose d'un
-marché Logiciels proposant de nombreux logiciels dont des solutions antivirus
-: plus de renseignements sont disponibles sur `Logi-Lille
+marché Logiciels proposant de nombreux logiciels dont des solutions
+antivirus : plus de renseignements sont disponibles sur `Logi-Lille
 <http://logilille.univ-lille1.fr>`_ (authentification nécessaire pour entrer
 sur ce site).
 

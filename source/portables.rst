@@ -13,9 +13,9 @@ et de quelques outils propres au laboratoire (script simplifiant la sauvegarde
 des données, accès au cloud de stockage du labo etc...)
 
 L'utilisation de ces machines doit être conforme au règlement régissant
-l'usage des `ressources informatiques de l'université
-<http://cri.univ-lille1.fr/Documents-formulaires/Charte-Informatique/>`_, et
-l'attribution vaut l'acceptation du contrat suivant:
+l'usage des `ressources informatiques de l'université <http://cri.univ-
+lille1.fr/Documents-formulaires/Charte-Informatique/>`_, et l'attribution vaut
+l'acceptation du contrat suivant:
 
 L'utilisateur est administrateur du portable qui lui est attribué, il lui
 revient d'installer les logiciels manquants (dont il a obtenu préalablement la

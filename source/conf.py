@@ -264,9 +264,6 @@ latex_elements = {
 \\makeatother
 """,
 
-     # Sphinx 1.5 will allow customization of font in Verbatim, and
-     # particularly the size which so far was forced to be \small
-     #'fvset': '', # override fontsize=\small setting
 
      # Latex figure (float) alignment
      #

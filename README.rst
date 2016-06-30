@@ -38,9 +38,9 @@ utilisant Pandoc_.
 
 La liste des contributeurs dans l'ordre chronologique :
 
-- Alexandre Mouton
-- Ingrid Violet
-- Sébastien Huart
-- Mohammed Khabzaoui
-- Kroum Tzanev
-- Jean-François Burnol
+-  Alexandre Mouton
+-  Ingrid Violet
+-  Sébastien Huart
+-  Mohammed Khabzaoui
+-  Kroum Tzanev
+-  Jean-François Burnol

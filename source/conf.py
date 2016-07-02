@@ -20,7 +20,21 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from jinja2 import Template
+
 # -- General configuration ------------------------------------------------
+
+# General information about the project.
+project = u'Info Paul Painlevé'
+filename = u'InfoPaulPainleve'
+year = u'2016'
+author = u'Laboratoire Paul Painlevé'
+title = u'Documentation Informatique'
+description = u'La documentation informatique du laboratoire Paul Painlevé'
+github = u'docinfo-sphinx'
+readthedocs = u'labopp-docinfo'
+copyright = year + u', ' + author
+
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
@@ -48,11 +62,6 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
-
-# General information about the project.
-project = u'Info Paul Painlevé'
-copyright = u'2016, Laboratoire Paul Painlevé'
-author = u'Laboratoire Paul Painlevé'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -236,47 +245,74 @@ html_static_path = ['_static']
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'InfoPaulPainlevedoc'
+htmlhelp_basename = filename+'doc'
 
 # -- Options for LaTeX output ---------------------------------------------
-
-latex_elements = {
-     # The paper size ('letterpaper' or 'a4paper').
-     #
-     'papersize': 'a4paper',
-
-     # The font size ('10pt', '11pt' or '12pt').
-     #
-     'pointsize': '12pt',
-
-     'fontpkg': """\
-\\usepackage[lining]{libertine}
-\\usepackage[varqu,varl]{inconsolata}
-""",
-
-     # Additional stuff for the LaTeX preamble.
-     # fix temporaire d'un bug ennuyeux de Sphinx 1.4.4 avec \code
-     # (espace en trop après inline code) qui sera réglé en 1.4.5
-     'preamble': """\
-\\setlength{\\headheight}{15pt}
-\\makeatletter
-\\DeclareRobustCommand{\\code}[1]{{\\@noligs\\scantokens{\\texttt{#1}\\relax}}}
-\\makeatother
-""",
-
-
-     # Latex figure (float) alignment
-     #
-     # 'figure_align': 'htbp',
-}
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'InfoPaulPainleve.tex', u'Documentation Informatique',
-     u'Laboratoire Paul Painlevé', 'manual'),
+    (master_doc, filename+'.tex', title, author, 'howto'),
 ]
+
+frontpageTemplate = Template(u"""
+\\pagenumbering{alph} % pour éviter "duplicate ignored" warning de hyperref
+\\noindent\\includegraphics[width=.35\\textwidth]{logonompp.pdf}\\par
+\\vfill
+\\begin{center}
+    \\sffamily\\bfseries
+    \\Huge {{title}} \\par
+    {{year}}\\par
+    \\vspace{7mm}
+    \\includegraphics[width=7cm]{couverture.jpg}\\par
+    \\vspace{7mm}
+    \\large {{author}}
+\\end{center}
+\\vfill
+\\centerline{\\smash{\\raisebox{-\\height}{\\makebox[0pt]%
+{\\includegraphics[width=\\dimexpr\\paperwidth-1cm\\relax]{labofooter.pdf}}}}}%
+\\newpage
+\\vspace*{\\fill}
+\\copyright{{copyright}}\\ \\par
+Photo de la couverture : Le serveur web du laboratoire (Atari-400), Licence Creative Commons Attribution-Share Alike 3.0 Unported.\\par
+Pour améliorer cette documentation, rendez vous à : \\newline
+\\hfill\\url{https://github.com/labopp/{{github}}}.\\par
+Pour voir la version html, rendez vous à : \\newline
+\\hfill\\url{https://{{readthedocs}}.readthedocs.io}.\\par
+\\clearpage
+\\pagenumbering{arabic}\pagestyle{plain}%
+""")
+
+frontpage = frontpageTemplate.render(
+    title=title, author=author, year=year, copyright=copyright, github=github, readthedocs=readthedocs)
+
+latex_elements = {
+    # The paper size ('letterpaper' or 'a4paper').
+    #
+    'papersize': 'a4paper',
+
+    # The font size ('10pt', '11pt' or '12pt').
+    #
+    'pointsize': '12pt',
+
+    'fontpkg': '\\usepackage{txfonts}',
+
+    # Additional stuff for the LaTeX preamble.
+    # fix temporaire d'un bug ennuyeux de Sphinx 1.4.4 avec \code
+    # (espace en trop après inline code) qui sera réglé en 1.4.5
+    'preamble': u"""\
+\\setlength{\\headheight}{15pt}
+\\makeatletter
+% patch temporaire à retirer dès Sphinx 1.4.5
+\\DeclareRobustCommand{\\code}[1]{{\\@noligs\\scantokens{\\texttt{#1}\\relax}}}
+\\makeatother
+""",
+
+    'maketitle': frontpage+"\n\\maketitle",
+}
+
+latex_additional_files = ['images/labofooter.pdf', 'images/logonompp.pdf', 'images/couverture.jpg']
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -310,7 +346,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'infopaulpainleve', u'Documentation Informatique',
+    (master_doc, filename.lower(), project,
      [author], 1)
 ]
 
@@ -325,10 +361,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'InfoPaulPainleve', u'Documentation Informatique',
-     author, 'InfoPaulPainleve',
-     'La documentation informatique du laboratoire Paul Painlevé',
-     'Miscellaneous'),
+    (master_doc, filename, project, author, filename, description, 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
